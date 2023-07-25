@@ -1,0 +1,113 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    height: 100%;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color: #113311;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 5px 0px;
+}
+
+#logo img{
+    max-width: 50px ;
+    height: auto;
+    background: #456BD9;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+
+
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#main-menu li {
+    position:  relative;
+}
+#main-menu li a {
+    color: #ffffff;
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+}
+#main-menu ul.sub-service{
+    position: absolute;
+    background-color: #113311;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    display: none;
+}
+#main-menu li:hover ul.sub-service{
+    display: block;
+}
+#main-menu ul.sub-service a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #c5b0b0;
+}
+#main-menu ul.sub-service li:hover a{
+    border-bottom: 1px solid #558858;
+}
+#main-menu ul.sub-service li:last-child a{
+    border: none;
+}
+/* thiết lập border khi có hover */
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #f00000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.75s cubic-bezier(0.75, 0.82, 0.165, 1);
+
+}
+#main-menu>li:hover>a::before{
+   width: 100px;
+}
+/* css cho footer*/
+.content {
+    min-height: calc(100vh - 100px);
+}
+.footer {
+    position: absolute;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0F1C3F;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.container-fluid{
+    background-color: cadetblue;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#wp-content{
+    background-color: white;
+}
+
