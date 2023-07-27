@@ -14,6 +14,39 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/content.css">
+    <style>
+        /* Định dạng cho bảng chung */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Định dạng cho tiêu đề bảng */
+        th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Định dạng cho các ô dữ liệu */
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Tạo hiệu ứng khi di chuột vào hàng */
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Tạo sự thay đổi màu nền xen kẽ giữa các hàng */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
     <title>Title</title>
 </head>
 <body>
@@ -23,13 +56,7 @@
             <a href="" id="logo"><img src="images\logo.jpg" alt=""></a>
             <ul id="main-menu">
                 <li><a href="task1.1.html">Home</a></li>
-                <li><a href="task1.4.html">Thêm Dịch Vụ</a>
-                    <ul class="sub-service">
-                        <li><a href="">Thêm Dịch Vụ Villa</a></li>
-                        <li><a href="">Thêm Dịch Vụ House</a></li>
-                        <li><a href="">Thêm Dịch Vụ Resort</a></li>
-                    </ul>
-                </li>
+                <li><a href="task1.4.html">Thêm Dịch Vụ</a></li>
                 <li><a href="task1.3.html">Sửa Dịch Vụ</a></li>
                 <li><a href="">Danh Sách Dịch vụ</a>
                     <ul class="sub-service">
@@ -46,39 +73,42 @@
     <div id="grid-wp-content">
         <div class="grid-item"></div>
         <div class="grid-item">
-            <h2 style="color: #c5b0b0">Sửa Thông Tin Dịch Vụ</h2>
+            <h2 style="color: #c5b0b0">Thêm Mới Khách Hàng</h2>
             <form action="/submit" method="post">
-                <label for="service-name">Tên dịch vụ:</label>
+                <label for="service-name">Tên Khách Hàng</label>
                 <input type="text" id="service-name" name="service-name" required ><br>
-                <label for="service-type">Loại dịch vụ:</label>
+                <label for="service-type">Loại Khách Hàng:</label>
                 <select id="service-type" name="service-type" required>
-                    <option value="">Chọn loại dịch vụ</option>
-                    <option value="maintenance">Thuê theo ngày</option>
-                    <option value="repair">Thuê theo tuần</option>
-                    <option value="installation">Thuê theo thángt</option>
+                    <option value="">Chọn Khách Hàng</option>
+                    <option value="maintenance">Good</option>
+                    <option value="repair">Silver</option>
+                    <option value="installation">Diamond</option>
                     <!-- Thêm các loại dịch vụ khác vào đây nếu cần -->
                 </select><br>
 
-                <label for="service-description">Mô tả dịch vụ:</label>
-                <textarea id="service-description" name="service-description" rows="4" required></textarea><br>
+                <label for="service-description">Ngày Sinh: </label>
+                <input id="service-description" type="date" name="service-description" rows="4" required><br>
 
-                <label>Trạng thái dịch vụ:</label><br>
-                <input type="radio" id="status-active" name="service-status" value="active" required>
+                <label>Căn cước công dân:</label>
+                <input type="number" id="status-active" name="service-status" value="active" required> <br>
+                <label>Email:</label>
+                <input type="number" iname="service-status" value="active" required> <br>
+                <label>Địa Chỉ:</label>
+                <input type="number"  name="service-status" value="active" required> <br>
                 <label for="status-active">Hoạt động</label><br>
                 <input type="radio" id="status-inactive" name="service-status" value="inactive" required>
                 <label for="status-inactive">Không hoạt động</label><br>
 
-                <input type="submit" value="Thêm dịch vụ">
+                <input type="submit" value="Thêm Khách Hàng">
             </form>
         </div>
 
-
     </div>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Your Website. Development By Ngoc Duy.</p>
-        </div>
-    </footer>
+    <!--    <footer class="footer">-->
+    <!--        <div class="container">-->
+    <!--            <p>&copy; 2023 Your Website. Development By Ngoc Duy.</p>-->
+    <!--        </div>-->
+    <!--    </footer>-->
 </div>
 
 </body>
