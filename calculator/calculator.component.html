@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularCalculatorApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .calculator{
+      padding: 10px;
+      border-radius: 1em;
+      height: 380px;
+      width: 400px;
+      margin: auto;
+      background-color: #191b28;
+    }
+    .display-box{
+      font-family: 'Orbitron', sans-serif;
+      background-color: whitesmoke;
+      border: solid black 0.5px;
+      color: black;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+
+    }
+    button{
+      font-family: 'Orbitron', sans-serif;
+      background-color: #64278f;
+      border: solid black 0.5px;
+      color: white;
+      border-radius: 5px;
+      width: 100%;
+      height: 70%;
+      outline: none;
+
+    }
+
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center">Máy Tính Cá Nhân</h1>
+
+    <table class="calculator">
+      <tr>
+        <td colspan="3">
+          <input  class="display-box" type="text" [(ngModel)]="show" disabled>
+        </td>
+        <td>
+          <button (click)="clearDisplay()">C</button>
+        </td>
+      </tr>
+      <tr>
+        <td><button (click)="disPlay('1')">1</button></td>
+        <td><button (click)="disPlay('2')">2</button></td>
+        <td><button (click)="disPlay('3')">3</button></td>
+        <td><button (click)="disPlay('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="disPlay('4')">4</button></td>
+        <td><button (click)="disPlay('5')">5</button></td>
+        <td><button (click)="disPlay('6')">6</button></td>
+        <td><button (click)="disPlay('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="disPlay('7')">7</button></td>
+        <td><button (click)="disPlay('8')">8</button></td>
+        <td><button (click)="disPlay('9')">9</button></td>
+        <td><button (click)="disPlay('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="disPlay('.')">.</button></td>
+        <td><button (click)="disPlay('0')">0</button></td>
+        <td><button (click)="calculate()">=</button></td>
+        <td><button (click)="disPlay('/')" >/</button></td>
+      </tr>
+    </table>
+
+</body>
+</html>
+
+
+
