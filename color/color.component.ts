@@ -12,10 +12,10 @@ export class ColorComponent implements OnInit {
   ngOnInit() {
 
   }
-  selectedColor: Object = '#black';
+  selector: Object = '#black';
 
   onChangeColor(color: Object) {
-    this.selectedColor = color;
+    this.selector = color;
   }
 
 }
