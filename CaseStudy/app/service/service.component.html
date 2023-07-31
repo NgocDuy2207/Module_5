@@ -1,0 +1,29 @@
+<h1>List Dịch Vụ</h1>
+<table class="table">
+  <thead>
+      <tr>
+          <th>No</th>
+          <th>ID</th>
+          <th>Name Service</th>
+          <th>Area</th>
+          <th>Number Floor</th>
+          <th>Max People</th>
+          <th>Cost</th>
+          <th>Rent Type</th>
+          <th>Status</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let service of services; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{service.id}}</td>
+        <td>{{service.name}}</td>
+        <td>{{service.area}}</td>
+        <td>{{service.numberFloor}}</td>
+        <td>{{service.maxPeoPle}}</td>
+        <td>{{service.cost}}</td>
+        <td>{{service.rent_Type}}</td>
+        <td>{{service.status}}</td>
+      </tr>
+  </tbody>
+</table>
