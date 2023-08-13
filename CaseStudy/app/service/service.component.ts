@@ -10,7 +10,11 @@ export class ServiceComponent implements OnInit {
 
   constructor() { }
   services: IService [] = [
-    {id: 1, name: 'Villa', area : 10, numberFloor : 6,
+    {id: 1, name: 'Villa', area : 11, numberFloor : 6,
+      maxPeoPle: 100, cost: 10000000, rent_Type: 'day', status: true},
+    {id: 1, name: 'House', area : 12, numberFloor : 7,
+      maxPeoPle: 100, cost: 10000000, rent_Type: 'day', status: true},
+    {id: 1, name: 'Resort', area : 13, numberFloor : 8,
       maxPeoPle: 100, cost: 10000000, rent_Type: 'day', status: true}
   ];
   ngOnInit() {

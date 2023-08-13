@@ -8,6 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ServiceComponent } from './service/service.component';
 import { CreateServiceComponent } from './service/create-service/create-service.component';
 import { EditServiceComponent } from './service/edit-service/edit-service.component';
+import { CustomersListComponent } from './customer/customers-list/customers-list.component';
+import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
+import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { ContractListComponent } from './contract/contract-list/contract-list.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +21,17 @@ import { EditServiceComponent } from './service/edit-service/edit-service.compon
     FooterComponent,
     ServiceComponent,
     CreateServiceComponent,
-    EditServiceComponent
+    EditServiceComponent,
+    CustomersListComponent,
+    CustomerCreateComponent,
+    CustomerEditComponent,
+    ContractListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

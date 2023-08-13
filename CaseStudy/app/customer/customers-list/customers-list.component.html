@@ -1,0 +1,30 @@
+<p>customers-list works!</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th>No</th>
+    <th>ID</th>
+    <th>Name Service</th>
+    <th>Area</th>
+    <th>Number Floor</th>
+    <th>Max People</th>
+    <th>Cost</th>
+    <th>Rent Type</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{customer.idCustomer}}</td>
+    <td>{{customer.nameCustomer}}</td>
+    <td>{{customer.dateCustomer}}</td>
+    <td>{{customer.genderCustomer}}</td>
+    <td>{{customer.idCardCustomer}}</td>
+    <td>{{customer.phoneCustomer}}</td>
+    <td>{{customer.emailCustomer}}</td>
+    <td>{{customer.typeCustomer}}</td>
+    <td>{{customer.addressCustomer}}</td>
+  </tr>
+  </tbody>
+</table>

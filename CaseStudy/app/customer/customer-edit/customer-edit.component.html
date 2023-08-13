@@ -1,35 +1,40 @@
-<h1>Thêm Mới Dịch Vụ</h1>
+<h1>Sửa Thông tin Khách Hàng</h1>
 
-<form novalidate [formGroup]="serviceForm" (ngSubmit)="onSubmit()"  >
+<form novalidate [formGroup]="customer" (ngSubmit)="onSubmit()"  >
   <div class="mb-3 mt-3">
-    <label for="id" class="form-label">Mã Dịch Vụ:</label>
+    <label for="id" class="form-label">ID Khách Hàng:</label>
     <input type="text" class="form-control" id="id" placeholder="Enter email" name="email">
   </div>
   <div class="mb-3">
-    <label for="name" class="form-label">Tên Dịch Vụ:</label>
+    <label for="name" class="form-label">Tên Khách Hàng:</label>
     <input type="text" class="form-control" id="name" placeholder="" name="name">
   </div>
   <div class="mb-3">
-    <label for="are" class="form-label">Diện Tích:</label>
+    <label for="are" class="form-label">Ngày Thêm Khách Hàng:</label>
     <input type="text" class="form-control" id="are" placeholder="" name="are">
   </div>
   <div class="mb-3">
-    <label for="maxPeople" class="form-label">Số Lương Người Tối Đa:</label>
+    <label for="maxPeople" class="form-label">Mã Khách Hàng:</label>
     <input type="number" class="form-control" id="maxPeople" placeholder="" name="maxPeople">
   </div>
   <div class="mb-3">
-    <label for="cost" class="form-label">Chi Phi:</label>
+    <label for="cost" class="form-label">Số Điện Thoại:</label>
     <input type="text" class="form-control" id="cost" placeholder="" name="cost">
   </div>
   <div class="mb-3">
-    <label for="rent_Type" class="form-label">Loại DỊch Vụ:</label>
+    <label for="rent_Type" class="form-label">Email:</label>
     <input type="text" class="form-control" id="rent_Type" placeholder="" name="rent_Type">
   </div>
   <div class="mb-3">
-    <label for="status" class="form-label">Trình Trạng:</label>
+    <label for="status" class="form-label">Loại Khách Hàng:</label>
+    <input type="text" class="form-control" id="type" placeholder="" name="rent_Type">
+  </div>
+  <div class="mb-3">
+    <label for="status" class="form-label">Địa Chỉ:</label>
     <input type="text" class="form-control" id="status" placeholder="" name="rent_Type">
   </div>
 
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
