@@ -1,0 +1,20 @@
+<h1>List từ điển</h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">STT</th>
+    <th scope="col">English</th>
+    <th scope="col">English to Vietnamese</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let word of words; index as i ">
+    <td>{{i + 1}}</td>
+    <td>{{word.word}}</td>
+    <td><a [routerLink]="['/detail', word.id]">to Vietnamese</a></td>
+  </tr>
+  </tbody>
+</table>
+<table>
+
+</table>
